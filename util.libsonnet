@@ -34,14 +34,19 @@ local tau = 6.283185307179586;
     self.lerp(toStart, toEnd, (pct - fromStart) / (fromEnd - fromStart)),
 
   '#gcd': d.fn(
-    '`gcd` calculates the greatest common divisor between two numbers',
+    '`gcd` calculates the greatest common divisor between two numbers. Returns 0 if either number is not an integer',
     [
       d.arg('a', d.T.number),
       d.arg('b', d.T.number),
     ]
   ),
   gcd(a, b)::
-    if b == 0 then a else self.gcd(b, a % b),
+    if !self.isInt(a) || !self.isInt(b)
+    then 0
+    else
+      if b == 0
+      then a
+      else self.gcd(b, a % b),
 
   '#deg2Rad': d.fn(
     '`deg2Rad` converts an angle specified in degrees to radians',
@@ -60,4 +65,13 @@ local tau = 6.283185307179586;
   ),
   rad2Deg(angle)::
     360 * angle / tau,
+
+  '#isInt': d.fn(
+    '`isInt` tests if the given number is an integer',
+    [
+      d.arg('num', d.T.number),
+    ]
+  ),
+  isInt(num)::
+    std.floor(num) == num,
 }
