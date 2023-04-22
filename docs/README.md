@@ -1,70 +1,16 @@
 ---
-permalink: /util/
+permalink: /
 ---
 
-# util
+# gaul-jsonnet
 
 ```jsonnet
-local util = import "github.com/aldernero/gaul-jsonnet/util.libsonnet"
+local gaul-jsonnet = import "github.com/aldernero/gaul-jsonnet/main.libsonnet"
 ```
 
-`util` contains common functions used in generative art
+`gaul-jsonnet` is a collection of jsonnet libraries aimed at generative art.
 
-## Index
+This package is the jsonnet equivalent of the gaul Go library, although there is not feature parity.
 
-* [`fn deg2Rad(angle)`](#fn-deg2rad)
-* [`fn gcd(a, b)`](#fn-gcd)
-* [`fn isInt(num)`](#fn-isint)
-* [`fn lerp(start, end, pct)`](#fn-lerp)
-* [`fn map(fromStart, fromEnd, toStart, toEnd, pct)`](#fn-map)
-* [`fn rad2Deg(angle)`](#fn-rad2deg)
 
-## Fields
-
-### fn deg2Rad
-
-```ts
-deg2Rad(angle)
-```
-
-`deg2Rad` converts an angle specified in degrees to radians
-
-### fn gcd
-
-```ts
-gcd(a, b)
-```
-
-`gcd` calculates the greatest common divisor between two numbers. Returns 0 if either number is not an integer
-
-### fn isInt
-
-```ts
-isInt(num)
-```
-
-`isInt` tests if the given number is an integer
-
-### fn lerp
-
-```ts
-lerp(start, end, pct)
-```
-
-`lerp` calculates the linear interpolation between two points a and b by i, where i is between 0 and 1.
-
-### fn map
-
-```ts
-map(fromStart, fromEnd, toStart, toEnd, pct)
-```
-
-`map` maps a value from one linear space to another
-
-### fn rad2Deg
-
-```ts
-rad2Deg(angle)
-```
-
-`rad2Deg` converts an angle specified in radians to degrees
+* [util](util.md)
