@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "dependencies": [
+    {
+      "source": {
+        "git": {
+          "remote": "https://github.com/jsonnet-libs/docsonnet.git",
+          "subdir": "doc-util"
+        }
+      },
+      "version": "2eae33a828320269c42acf38e808479a33e416db",
+      "sum": "lppHbNARpG3YTpuSv94X9TyIE9TfV3CyTVceIHSRxpc="
+    },
+    {
+      "source": {
+        "git": {
+          "remote": "https://github.com/jsonnet-libs/testonnet.git",
+          "subdir": ""
+        }
+      },
+      "version": "9b30f882132b8d8754535fbcee822b804c90405f",
+      "sum": "MB1dww51rdYJTWAAFkrOXMeMNxzZ5yyFPjPxaERDb1k="
+    },
+    {
+      "source": {
+        "git": {
+          "remote": "https://github.com/jsonnet-libs/xtd.git",
+          "subdir": ""
+        }
+      },
+      "version": "3e494e02563b9eababbb24f0dfca0a50e03dc0b3",
+      "sum": "GP6SaIzrnD0HRw/EeI3iO9HboA2dnBizgEpxw3m7Ph4="
+    }
+  ],
+  "legacyImports": false
+}
