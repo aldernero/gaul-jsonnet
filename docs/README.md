@@ -14,6 +14,7 @@ local util = import "github.com/aldernero/gaul-jsonnet/util.libsonnet"
 
 * [`fn deg2Rad(angle)`](#fn-deg2rad)
 * [`fn gcd(a, b)`](#fn-gcd)
+* [`fn isInt(num)`](#fn-isint)
 * [`fn lerp(start, end, pct)`](#fn-lerp)
 * [`fn map(fromStart, fromEnd, toStart, toEnd, pct)`](#fn-map)
 * [`fn rad2Deg(angle)`](#fn-rad2deg)
@@ -34,7 +35,15 @@ deg2Rad(angle)
 gcd(a, b)
 ```
 
-`gcd` calculates the greatest common divisor between two numbers
+`gcd` calculates the greatest common divisor between two numbers. Returns 0 if either number is not an integer
+
+### fn isInt
+
+```ts
+isInt(num)
+```
+
+`isInt` tests if the given number is an integer
 
 ### fn lerp
 
